@@ -8,6 +8,7 @@ function Navbar() {
             <ul>
                 <li><Link to="/">Main</Link></li>
                 <li><Link to="/sub">Sub</Link></li>
+                <li><Link to="/add-recipe">RecipeForm</Link></li>
             </ul>
         </nav>
     );

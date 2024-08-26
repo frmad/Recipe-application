@@ -1,0 +1,41 @@
+.recipes-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjust gap between cards */
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 100%;
+    margin-bottom: 20px; /* Space between cards */
+}
+
+.recipes-intro {
+    text-align: center;
+}
+
+/*.gobacklink {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.gobacklink:hover {
+    background-color: gray;
+}*/

@@ -1,8 +1,9 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import Navbar from './Navbar';  // Ensure this import path is correct
-import Main from './routes/Main';  // Ensure this import path is correct
-import Sub from './routes/Sub';  // Ensure this import path is correct
+import Main from './routes/Main';
+import Sub from './routes/Sub';
+import RecipeForm from './routes/RecipeForm'
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/sub" element={<Sub />} />
+                <Route path="/add-recipe" element={<RecipeForm />} />
             </Routes>
         </div>
     );

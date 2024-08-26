@@ -1,0 +1,40 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center; /* Center all content initially */
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card.expanded {
+    height: auto; /* Adjust height to accommodate expanded content */
+}
+
+.card.expanded .expanded-content {
+    text-align: left; /* Align expanded content to the left */
+}
+
+/*.recipe-image {
+    width: 100%; /* Ensure image takes full width of the card */
+   /* height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}*/
+
+.expanded-content {
+    margin-top: 10px;
+}
+
+.expanded-content h4 {
+    margin-bottom: 8px;
+}
+
+.expanded-content ul,
+.expanded-content ol {
+    padding-left: 20px; /* Indent list items */
+}
