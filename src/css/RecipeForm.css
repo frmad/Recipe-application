@@ -1,0 +1,55 @@
+/* Form styling */
+.recipe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* General form group styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label styling */
+.form-group label {
+    font-weight: bold;
+    margin-left: 15%;
+    margin-bottom: 0.5rem;
+    color: #555;
+    display: block; /* Make the label a block element for proper alignment */
+    text-align: left; /* Ensure text inside the label is left-aligned */
+}
+
+/* Input and textarea styling */
+.form-input, .form-textarea, .form-select {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit button styling */
+.submit-button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block; /* Ensure the button size is only as large as its content */
+    text-align: center;
+}
+
+.submit-button:hover {
+    background-color: #e68a00; /* Darker orange on hover */
+}

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../css/RecipeForm.css';
 
 const RecipeForm = () => {
     const [title, setTitle] = useState('');
@@ -40,52 +41,64 @@ const RecipeForm = () => {
                 setCategory('');
             })
             .catch(error => console.error('Error adding recipe:', error));
-
     };
 
     return (
         <div>
+            <div className="subContainer">
+                <h1>Add Recipe Here</h1>
+            </div>
             <p>Split by newlines</p>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Title:</label>
+            <form onSubmit={handleSubmit} className="recipe-form">
+                <div className="form-group">
+                    <label htmlFor="title">Title:</label>
                     <input
+                        id="title"
                         type="text"
                         value={title}
                         onChange={(e) => setTitle(e.target.value)}
                         required
+                        className="form-input"
                     />
                 </div>
-                <div>
-                    <label>Description:</label>
+                <div className="form-group">
+                    <label htmlFor="description">Description:</label>
                     <textarea
+                        id="description"
                         value={description}
                         onChange={(e) => setDescription(e.target.value)}
                         required
+                        className="form-textarea"
                     />
                 </div>
-                <div>
-                    <label>Ingredients (one per line):</label>
+                <div className="form-group">
+                    <label htmlFor="ingredients">Ingredients (one per line):</label>
                     <textarea
+                        id="ingredients"
                         value={ingredients}
                         onChange={(e) => setIngredients(e.target.value)}
                         required
+                        className="form-textarea"
                     />
                 </div>
-                <div>
-                    <label>Instructions (one per line):</label>
+                <div className="form-group">
+                    <label htmlFor="instructions">Instructions (one per line):</label>
                     <textarea
+                        id="instructions"
                         value={instructions}
                         onChange={(e) => setInstructions(e.target.value)}
                         required
+                        className="form-textarea"
                     />
                 </div>
-                <div>
-                    <label>Category:</label>
+                <div className="form-group">
+                    <label htmlFor="category">Category:</label>
                     <select
+                        id="category"
                         value={category}
                         onChange={(e) => setCategory(e.target.value)}
                         required
+                        className="form-select"
                     >
                         <option value="">Select a category</option>
                         <option value="breakfast">Breakfast</option>
@@ -94,7 +107,7 @@ const RecipeForm = () => {
                         <option value="snack">Snack</option>
                     </select>
                 </div>
-                <button type="submit">Add Recipe</button>
+                <button type="submit" className="submit-button">Add Recipe</button>
             </form>
         </div>
     );

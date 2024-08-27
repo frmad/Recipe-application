@@ -1,27 +1,71 @@
-/* Navbar.css */
-nav {
-    background-color: #333;
+
+.navbar {
     padding: 1rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
-ul {
+.home-navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Translucent white */
+    backdrop-filter: blur(0px); /* Adds a blur effect to the background */
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: right;
+} /* home navbar */
+
+.other-navbar {
+    /*background-color: rgba(255, 255, 255, 0.8);*/ /* Translucent white */
+    /*backdrop-filter: blur(0px);*/ /* Adds a blur effect to the background */
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: right;
+    color: #fff;
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.7);
+} /* other navbars */
+
+.nav-list {
     list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-item {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
-li {
-    margin: 0 1rem;
-}
-
-a {
-    color: #fff;
+.nav-link {
     text-decoration: none;
-    font-size: 1.2rem;
+    color: inherit;
+    font-weight: bold;
+    padding: 10px 15px;
+    /*border-radius: 5px;*/
+    transition: background-color 0.3s ease;
+} /* other pages text in navbar */
+
+.nav-link:hover {
+    color: #FFA500;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Hover effect for links in other-navbar */
+.other-navbar .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    color: white;
 }
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #FFA500; /* Active link styling */
+} /* current page text in navbar */

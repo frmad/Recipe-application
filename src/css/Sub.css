@@ -1,0 +1,13 @@
+.subContainer {
+    background-image: url('../Images/img_5.png'); /* Background image for only this page */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 50vh; /* Minimum height of the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Text color for better visibility */
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.7); /* Adds text shadow for better readability */
+}

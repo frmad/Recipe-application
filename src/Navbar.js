@@ -1,14 +1,38 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link, NavLink, useLocation} from 'react-router-dom';
 import './css/Navbar.css';
 
 function Navbar() {
+    const location = useLocation()
+
     return (
-        <nav>
-            <ul>
-                <li><Link to="/">Main</Link></li>
-                <li><Link to="/sub">Sub</Link></li>
-                <li><Link to="/add-recipe">RecipeForm</Link></li>
+        <nav className={`navbar ${location.pathname === '/' ? 'home-navbar' : 'other-navbar'}`}>
+            <ul className="nav-list">
+                <li className="nav-item">
+                    <NavLink
+                        to="/"
+                        className={({isActive}) => (isActive ? 'nav-link active' : 'nav-link')}
+                    >
+                        Home
+                    </NavLink>
+                    {/* Used to create navigation links. It allows us to apply an active class to the link when it matches the current rout*/}
+                </li>
+                <li className="nav-item">
+                    <NavLink
+                        to="/sub"
+                        className={({isActive}) => (isActive ? 'nav-link active' : 'nav-link')}
+                    >
+                        Recipes
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                    <NavLink
+                        to="/add-recipe"
+                        className={({isActive}) => (isActive ? 'nav-link active' : 'nav-link')}
+                    >
+                        Add Recipes
+                    </NavLink>
+                </li>
             </ul>
         </nav>
     );
