@@ -41,7 +41,7 @@ const RecipeCard = ({ title, description, ingredients, instructions, id, onDelet
                                 <li key={index}>{instruction}</li>
                             ))}
                         </ol>
-                        <button onClick={handleDelete}>Delete</button>
+                        <button onClick={handleDelete} className="deleteButton">Delete</button>
                     </div>
                 )}
             </div>

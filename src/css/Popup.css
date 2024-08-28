@@ -84,6 +84,11 @@
     margin: 10px;
 }
 
-.searchButton :hover {
+.searchButton:hover {
     background-color: #e68a00; /* Darker orange on hover */
+}
+
+.searchButton:focus, .categoryButtons button:focus {
+    outline: 2px solid #FFA500; /* Orange outline to indicate focus */
+    outline-offset: 2px; /* Space between outline and button */
 }

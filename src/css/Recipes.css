@@ -55,9 +55,9 @@
 }
 
 .categoryButtons button{
-    background-color: #FFA500;
-    color: white;
-    border: none;
+    background-color: white;
+    color: #FFA500;
+    border: 2px solid #FFA500;
     border-radius: 4px;
     padding: 10px 20px;
     margin: 20px auto;
@@ -69,5 +69,7 @@
 }
 
 .categoryButtons button:hover {
-    background-color: #e68a00; /* Darker orange on hover */
+    border: 1px solid #FFC500;
+    background-color: #FFA500;
+    color: white;
 }

@@ -33,7 +33,7 @@ const Recipes = () => {
                 <button onClick={() => setCategory('Lunch')}>Lunch</button>
                 <button onClick={() => setCategory('Dinner')}>Dinner</button>
                 <button onClick={() => setCategory('Snack')}>Snacks</button>
-                <button onClick={() => setCategory('All')}>Nulstil</button>
+                <button onClick={() => setCategory('All')}>All</button>
             </div>
             <div className="recipes-list">
             {filterRecipes.length > 0 ? (
