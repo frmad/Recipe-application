@@ -47,8 +47,8 @@ const RecipeForm = () => {
         <div>
             <div className="subContainer">
                 <h1>Add Recipe Here</h1>
+                <p><strong>Inputs are split by new lines</strong></p>
             </div>
-            <p>Split by newlines</p>
             <form onSubmit={handleSubmit} className="recipe-form">
                 <div className="form-group">
                     <label htmlFor="title">Title:</label>
@@ -101,10 +101,10 @@ const RecipeForm = () => {
                         className="form-select"
                     >
                         <option value="">Select a category</option>
-                        <option value="breakfast">Breakfast</option>
-                        <option value="lunch">Lunch</option>
-                        <option value="dinner">Dinner</option>
-                        <option value="snack">Snack</option>
+                        <option value="Breakfast">Breakfast</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Dinner">Dinner</option>
+                        <option value="Snack">Snack</option>
                     </select>
                 </div>
                 <button type="submit" className="submit-button">Add Recipe</button>
