@@ -73,3 +73,10 @@
     background-color: #FFA500;
     color: white;
 }
+
+.categoryButtons button:focus {
+    outline: 2px solid #FFA500; /* Orange outline to indicate focus */
+    outline-offset: 2px; /* Space between outline and button */
+    color: white;
+    background-color: #FFA500;
+}
