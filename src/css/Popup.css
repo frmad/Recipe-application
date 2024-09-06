@@ -92,3 +92,23 @@
     outline: 2px solid #FFA500; /* Orange outline to indicate focus */
     outline-offset: 2px; /* Space between outline and button */
 }
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+.searchIconBox {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.searchIcon {
+    width: 100%;
+    height: auto;
+}
