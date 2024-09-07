@@ -7,8 +7,8 @@ function Sub() {
     return (
         <div>
             <div className="subContainer">
-                <h1>Recipes</h1>
-                <p><strong>Browse Recipes Here</strong></p>
+                <h1>Opskrifter</h1>
+                <p><strong>Find Opskrifter Her</strong></p>
             </div>
             <Recipe/>
         </div>

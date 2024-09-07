@@ -29,7 +29,7 @@ function Popup({ recipes }) {
         <div>
             <button onClick={handlePopup} className="searchButton">
                 <div className="searchContainer">
-                    <p>Open Search</p>
+                    <p>Åbn Søgning</p>
                     <div className="searchIconBox">
                         <img src={searchIcon} alt="Search Icon" className="searchIcon"/>
                     </div>
@@ -39,15 +39,15 @@ function Popup({ recipes }) {
                 <div className="popup-overlay" onClick={handlePopup}>
                     <div className="popup-container" onClick={e => e.stopPropagation()}>
                         <div className="popup-header">
-                        <h1>Search for recipe</h1>
-                            <button className="popup-close-button" onClick={handlePopup}>Close</button>
+                        <h1>Søg efter opskrift</h1>
+                            <button className="popup-close-button" onClick={handlePopup}>Luk</button>
                         </div>
                         <div className="search">
                             <input
                                 type="text"
                                 value={searchTerm}
                                 onChange={handleChange}
-                                placeholder="Search..."
+                                placeholder="Søg..."
                             />
                         </div>
                         <div className="search-results">
@@ -62,7 +62,7 @@ function Popup({ recipes }) {
                                     />
                                 ))
                             ) : (
-                                <p>No recipes found</p>
+                                <p>Ingen opskrifter fundet</p>
                             )}
                         </div>
                     </div>

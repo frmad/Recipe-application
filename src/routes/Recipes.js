@@ -23,20 +23,20 @@ const Recipes = () => {
 
     return (
         <div className="recipes-container">
-            {/*<h2 className="recipes-title">Recipes</h2>*/}
+            {/*<h2 className="recipes-title">Opskrifter</h2>*/}
             <p className="recipes-intro">
-                Welcome to the Recipes page, where you'll discover an assortment of delicious recipes.
+                Velkommen til Opskriftssiden, hvor du kan finde en række lækre opskrifter.
             </p>
             <Popup recipes={recipes}/>
             <div className="categoryButtons">
-                <button onClick={() => setCategory('Breakfast')}>Breakfast</button>
-                <button onClick={() => setCategory('Lunch')}>Lunch</button>
-                <button onClick={() => setCategory('Dinner')}>Dinner</button>
+                <button onClick={() => setCategory('Morgenmad')}>Morgenmad</button>
+                <button onClick={() => setCategory('Frokost')}>Frokost</button>
+                <button onClick={() => setCategory('Aftensmad')}>Aftensmad</button>
                 <button onClick={() => setCategory('Snack')}>Snacks</button>
-                <button onClick={() => setCategory('All')}>All</button>
+                <button onClick={() => setCategory('Alle')}>Alle</button>
             </div>
             <div className="recipes-list">
-            {filterRecipes.length > 0 ? (
+                {filterRecipes.length > 0 ? (
                     filterRecipes.map(recipe => (
                         <RecipeCard
                             key={recipe._id}
@@ -48,26 +48,12 @@ const Recipes = () => {
                             onDelete={handleDelete}
                         />
                     ))
-                ):(
+                ) : (
                     <div className="noItems">
-                        <p>No recipes to show</p>
+                        <p>Ingen opskrifter at vise</p>
                     </div>
                 )}
             </div>
-            {/*<h1>Dinner</h1>
-            <div className="recipes-list">
-                {dinner.map(recipe => (
-                    <RecipeCard
-                        key={recipe._id}
-                        id={recipe._id} // Pass ID to RecipeCard
-                        title={recipe.title}
-                        description={recipe.description}
-                        ingredients={recipe.ingredients}
-                        instructions={recipe.instructions}
-                        onDelete={handleDelete} // Pass the delete handler
-                    />
-                ))}
-            </div>*/}
         </div>
     );
 };

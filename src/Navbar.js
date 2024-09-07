@@ -13,7 +13,7 @@ function Navbar() {
                         to="/"
                         className={({isActive}) => (isActive ? 'nav-link active' : 'nav-link')}
                     >
-                        Home
+                        Forside
                     </NavLink>
                     {/* Used to create navigation links. It allows us to apply an active class to the link when it matches the current rout*/}
                 </li>
@@ -22,7 +22,7 @@ function Navbar() {
                         to="/sub"
                         className={({isActive}) => (isActive ? 'nav-link active' : 'nav-link')}
                     >
-                        Recipes
+                        Opskrifter
                     </NavLink>
                 </li>
                 <li className="nav-item">
@@ -30,7 +30,7 @@ function Navbar() {
                         to="/add-recipe"
                         className={({isActive}) => (isActive ? 'nav-link active' : 'nav-link')}
                     >
-                        Add Recipes
+                        Tilføj Opskrift
                     </NavLink>
                 </li>
             </ul>

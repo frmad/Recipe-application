@@ -5,6 +5,13 @@
     background-color: #ffffff;
     cursor: pointer;
     transition: transform 0.3s ease;
+    word-wrap: break-word; /* Ensure long words break and don't overflow */
+}
+
+.card h3, .card p {
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflowing text */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
 .card:hover {
@@ -53,3 +60,4 @@
 .deleteButton:hover {
     background-color: #d32f2f;
 }
+

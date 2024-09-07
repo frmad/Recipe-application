@@ -5,9 +5,10 @@ import {Link} from "react-router-dom";
 function Main() {
     return (
         <div className="main-container">
-            <h1>Welcome to My Recipe Forum</h1>
-            <p>Discover and add your favorite recipes. Whether you're looking for a quick meal or a special dish, you'll find inspiration here.</p>
-            <Link to="/sub">Browse Recipes Here</Link>
+            <h1>Velkommen til Mit Opskriftsforum</h1>
+            <p>Opdag og tilføj dine yndlingsopskrifter. Uanset om du leder efter et hurtigt måltid eller en særlig ret,
+                kan du finde inspiration her.</p>
+            <Link to="/sub">Gennemse Opskrifter Her</Link>
         </div>
     );
 }

@@ -46,12 +46,12 @@ const RecipeForm = () => {
     return (
         <div>
             <div className="subContainer">
-                <h1>Add Recipe Here</h1>
-                <p><strong>Inputs are split by new lines</strong></p>
+                <h1>Tilføj Opskrift Her</h1>
+                <p><strong>Input er delt pr. linje</strong></p>
             </div>
             <form onSubmit={handleSubmit} className="recipe-form">
                 <div className="form-group">
-                    <label htmlFor="title">Title:</label>
+                    <label htmlFor="title">Titel:</label>
                     <input
                         id="title"
                         type="text"
@@ -62,7 +62,7 @@ const RecipeForm = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="description">Description:</label>
+                    <label htmlFor="description">Beskrivelse:</label>
                     <textarea
                         id="description"
                         value={description}
@@ -72,7 +72,7 @@ const RecipeForm = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="ingredients">Ingredients (one per line):</label>
+                    <label htmlFor="ingredients">Ingredienser (en per linje):</label>
                     <textarea
                         id="ingredients"
                         value={ingredients}
@@ -82,7 +82,7 @@ const RecipeForm = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="instructions">Instructions (one per line):</label>
+                    <label htmlFor="instructions">Instruktioner (en per linje):</label>
                     <textarea
                         id="instructions"
                         value={instructions}
@@ -92,7 +92,7 @@ const RecipeForm = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="category">Category:</label>
+                    <label htmlFor="category">Kategori:</label>
                     <select
                         id="category"
                         value={category}
@@ -100,14 +100,14 @@ const RecipeForm = () => {
                         required
                         className="form-select"
                     >
-                        <option value="">Select a category</option>
-                        <option value="Breakfast">Breakfast</option>
-                        <option value="Lunch">Lunch</option>
-                        <option value="Dinner">Dinner</option>
+                        <option value="">Vælg en kategori</option>
+                        <option value="Breakfast">Morgenmad</option>
+                        <option value="Lunch">Frokost</option>
+                        <option value="Dinner">Aftensmad</option>
                         <option value="Snack">Snack</option>
                     </select>
                 </div>
-                <button type="submit" className="submit-button">Add Recipe</button>
+                <button type="submit" className="submit-button">Tilføj Opskrift</button>
             </form>
         </div>
     );

@@ -29,19 +29,19 @@ const RecipeCard = ({ title, description, ingredients, instructions, id, onDelet
                 <p>{description}</p>
                 {expanded && (
                     <div className="expanded-content">
-                        <h4>Ingredients:</h4>
+                        <h4>Ingredienser:</h4>
                         <ul>
                             {ingredients.map((ingredient, index) => (
                                 <li key={index}>{ingredient}</li>
                             ))}
                         </ul>
-                        <h4>Instructions:</h4>
+                        <h4>Instruktioner:</h4>
                         <ol>
                             {instructions.map((instruction, index) => (
                                 <li key={index}>{instruction}</li>
                             ))}
                         </ol>
-                        <button onClick={handleDelete} className="deleteButton">Delete</button>
+                        <button onClick={handleDelete} className="deleteButton">Slet</button>
                     </div>
                 )}
             </div>
