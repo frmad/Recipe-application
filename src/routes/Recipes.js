@@ -29,11 +29,11 @@ const Recipes = () => {
             </p>
             <Popup recipes={recipes}/>
             <div className="categoryButtons">
-                <button onClick={() => setCategory('Morgenmad')}>Morgenmad</button>
-                <button onClick={() => setCategory('Frokost')}>Frokost</button>
-                <button onClick={() => setCategory('Aftensmad')}>Aftensmad</button>
+                <button onClick={() => setCategory('Breakfast')}>Morgenmad</button>
+                <button onClick={() => setCategory('Lunch')}>Frokost</button>
+                <button onClick={() => setCategory('Dinner')}>Aftensmad</button>
                 <button onClick={() => setCategory('Snack')}>Snacks</button>
-                <button onClick={() => setCategory('Alle')}>Alle</button>
+                <button onClick={() => setCategory('All')}>Alle</button>
             </div>
             <div className="recipes-list">
                 {filterRecipes.length > 0 ? (
